@@ -1,5 +1,6 @@
 import os
 from twilio.rest import Client
+from DB.connectionDB import DbConnection
 from twilio.base.exceptions import TwilioRestException
 
 class Verify:
@@ -24,7 +25,11 @@ class Verify:
         #print(verification.__dict__)
         return verification.status
       except TwilioRestException as e:
-        # print(e)
+        print(e)
+        delEntry = DbConnection().deleteFromTemp(moNo)
+        if delEntry == 103 :
+          return delEntry
+
         return e.code
     
     def verifyOtp(self,sid,moNo,code):
