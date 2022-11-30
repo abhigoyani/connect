@@ -1,0 +1,22 @@
+@media only screen and (max-width: 500px) {
+    .login-box-outer {
+        width: 330px
+    }
+    #particles-js {
+        height: 100vh !important;
+    }
+    #phone{
+        height: 40px!important;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .login-box-outer {
+        width: 280px
+    }
+    .form-outer {
+        padding: 0px 22px;
+    }
+    
+    
+}

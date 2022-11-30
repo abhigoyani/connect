@@ -1,0 +1,22 @@
+/* :root {
+  --main-bg: blue;
+  --fonts: "Hind Siliguri", sans-serif;
+  --hover-bg: rgb(31, 31, 221);
+  font-family: 'Rubik', sans-serif;;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonts);
+} */
+/* html {
+  overflow-x: hidden;
+} */
+::placeholder {
+  color: rgb(27, 27, 27);
+}
+body {
+  /* background-repeat: ; */
+  background-color: #f5f6f8 !important;
+}

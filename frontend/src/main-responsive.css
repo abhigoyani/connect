@@ -1,0 +1,347 @@
+@media (max-width: 1124px) {
+  .preview {
+    width: 440px;
+  }
+  .iphone {
+    width: 300px;
+    height: 600px;
+    border-radius: 45px;
+    border: 11px solid;
+  }
+  .main-back-banner-img > img {
+    height: 140px;
+  }
+  .home-main-profile-img {
+    width: 70px;
+    height: 70px;
+    margin-top: 13px;
+  }
+  .home-main-back-banner {
+    margin-bottom: 41px;
+  }
+  .home-main-profile-username h2 {
+    font-size: 15px;
+    margin-bottom: -12px;
+  }
+  .home-main-profile-username span {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  /* .home-main-profile {
+    bottom: -24%;
+  } */
+  .home-main-bio span {
+    font-size: 16px;
+  }
+  .edit-profile {
+    width: 55%;
+  }
+  .home-main-connect-add .link button a {
+    font-size: 13px;
+  }
+  /* .box {
+    margin: 10px;
+    width: 350px;
+  } */
+  .box button,
+  .box2 button {
+    padding: 7px 15px;
+  }
+  .home-main-connect-add .link button {
+    padding: 8px;
+  }
+  .home-main-connect-add .link .link-icon img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 1040px) {
+  .user-profile button {
+    /* width: 120px; */
+    font-size: 14px;
+  }
+  .custom-file-input {
+    width: 190px;
+  }
+  .about textarea {
+    width: 300px;
+    height: 130px;
+    font-size: 15px;
+  }
+  .change-name input {
+    font-size: 15px;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    font-size: 13px;
+    /* width: 160px; */
+  }
+}
+@media (max-width: 860px) {
+  .box,
+  .box2 {
+    width: 95%;
+    margin: 20px auto;
+    padding: 12px;
+  }
+  .boxes {
+    width: 100%;
+  }
+  .add-link {
+    padding: 8px 25px;
+  }
+  .edit-profile {
+    width: 60%;
+  }
+  .textb {
+    font-size: 14px;
+    /* margin-bottom: -7px; */
+  }
+  .textb h3 {
+    margin-bottom: -7px;
+  }
+  .box input,
+  .box2 input {
+    margin: 12px 0;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .main-back-banner-img > img {
+    height: 110px;
+    object-fit: cover;
+  }
+  .home-main-profile-img {
+    width: 60px;
+    height: 60px;
+  }
+  .home-main-profile {
+    bottom: -27%;
+  }
+  .home-main-profile-img {
+    margin-top: 25px;
+  }
+  .home-main-profile-username h2 {
+    font-size: 14px;
+  }
+  .home-main-profile-username span {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+  .home-main-bio span {
+    font-size: 14px;
+  }
+  .home-main-bio {
+    padding-bottom: 6px;
+  }
+  .home-main-connect-add .link button {
+    padding: 6px;
+  }
+  .home-main-connect-add {
+    padding: 0 10px 8px 10px;
+  }
+  .home-main-connect-add .link .link-icon img {
+    width: 22px;
+    height: 22px;
+    left: 0.5rem;
+  }
+  .iphone {
+    width: 250px;
+    height: 500px;
+    border-radius: 40px;
+    border: 9px solid;
+  }
+  .box button,
+  .box2 button {
+    margin: 5px 5px;
+  }
+  .box p,
+  .box2 p {
+    font-size: 15px;
+  }
+  .text h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 740px) {
+  .preview {
+    display: none;
+  }
+  .edit-profile {
+    width: 100%;
+    padding-top: 4rem;
+    height: 100%;
+  }
+  .add-link {
+    padding: 8px 100px;
+  }
+  .box,
+  .box2 {
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    padding: 20px;
+    /* margin: 2 rem 0.7 rem; */
+    margin: auto;
+    margin-top: 1.3rem;
+  }
+  .box input,
+  .box input {
+    margin: 20px 0;
+    margin-left: 10px;
+  }
+  .box button,
+  .box button {
+    padding: 7px 15px;
+    margin: 5px 5px;
+  }
+  .profile {
+    width: 100%;
+    padding: 15px;
+    /* height: 90%; */
+    margin-top: 0;
+    margin: 2rem 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .user-profile button {
+    /* width: 140px; */
+    font-size: 15px;
+  }
+  .custom-file-input {
+    width: 190px;
+  }
+  .custom-file-input::before {
+    font-size: 15px;
+  }
+  .about textarea {
+    width: auto;
+    height: auto;
+    /* height: 130 px; */
+    font-size: 15px;
+  }
+  .boxes {
+    height: 90%;
+    width: 100%;
+  }
+  .final {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 550px) {
+  .edit-profile {
+    height: 92%;
+  }
+  .user-profile {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-file-input,
+  .user-profile button {
+    /* width: 120px; */
+    font-size: 14px;
+  }
+  .custom-file-input::before {
+    font-size: 14px;
+  }
+  .about textarea {
+    width: 300px;
+    height: 130px;
+    font-size: 15px;
+  }
+  .edit-profile {
+    padding: 10px;
+    margin-top: 2.5rem;
+  }
+  .p-title {
+    margin-bottom: 0.7rem;
+  }
+  .p-title h2 {
+    font-size: 21px;
+  }
+  .box p,
+  .box2 p {
+    font-size: 13px;
+  }
+
+  .avatar,
+  .banner {
+    margin-bottom: 1.3rem;
+  }
+  /* .user-profile {
+    margin-top: -5rem;
+  } */
+  .box,
+  .box2 {
+    width: 99%;
+    padding: 10px 15px;
+    /* margin: 1rem 0.7rem; */
+  }
+  .add-link {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+  .profile {
+    /* height: 100%; */
+    margin: auto;
+  }
+  .text h3,
+  .textb h3 {
+    font-size: 14px;
+  }
+  .box input,
+  .box2 input {
+    font-size: 13px;
+    margin: 10px 0;
+    margin-left: 8px;
+  }
+  .boxes {
+    padding: 10px;
+    padding-top: 0;
+    height: 82%;
+    padding-bottom: 3rem;
+  }
+  .box button,
+  .box2 button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .user-profile button {
+    /* width: 100px; */
+    font-size: 12px;
+  }
+  .custom-file-input {
+    width: 175px;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    font-size: 12px;
+  }
+  .custom-file-input::before {
+    font-size: 12px;
+  }
+  .about textarea {
+    width: 270px;
+    height: 110px;
+    font-size: 13px;
+  }
+  .change-name input {
+    font-size: 13px;
+  }
+}
+/* @media (max-height:) */
+@media (max-height: 682px) {
+  .profile {
+    height: auto;
+    margin: 2rem 0;
+  }
+  .edit-profile {
+    padding-bottom: 3rem;
+  }
+  .user-profile {
+    /* margin: 2rem 0; */
+    padding-top: 0;
+    margin-bottom: 5rem;
+  }
+}

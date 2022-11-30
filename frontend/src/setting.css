@@ -1,0 +1,167 @@
+.alink {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.alink i {
+  width: 20px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* container */
+.container-setting {
+  min-width: 550px;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  /* background-color: #fff; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* settings */
+.settings {
+  color: #1d1d27 !important;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-radius: 20px;
+}
+/* head, body */
+.settings .head,
+.settings .body {
+  padding: 16px 8px;
+}
+.settings .head + .body {
+  border-top: 1px solid #ccc;
+}
+/* head */
+.settings .head {
+  text-align: center;
+  position: relative;
+}
+.settings .photo {
+  font-size: 0;
+}
+.settings .photo img {
+  border-radius: 50%;
+}
+.settings .user_info {
+  margin-top: 8px;
+}
+.settings .user_info h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.settings .user_info small {
+  font-size: 14px;
+}
+
+/* body */
+.settings .body {
+  max-height: 400px;
+  overflow: auto;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}
+.setting .setting_item {
+  display: flex;
+  align-items: center;
+}
+.setting {
+  padding: 0px;
+}
+.setting .setting_item + .setting_item {
+  border: 1px solid #ccc;
+}
+.setting_item {
+  background-color: #1d1d27;
+  color: snow;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 15px 0 !important;
+  display: flex;
+  align-items: initial !important;
+  flex-direction: column;
+}
+.setting-item-main {
+  display: flex;
+}
+.drop-setting-item {
+  display: none;
+}
+.drop-item-list {
+  padding: 0;
+}
+.drop-item-list li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+  padding: 14px;
+}
+.drop-item-head {
+  font-weight: bold;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+.drop-item-desc {
+  font-weight: bold;
+  font-size: 15px;
+  color: snow;
+}
+
+.setting .setting-item-main .item_options {
+  flex-grow: 1;
+  padding: 0 8px;
+}
+.signout {
+  text-align: center;
+  background: #f05555;
+  transition: 0.2s;
+  font-weight: bold;
+}
+.setting-item-main > i {
+  margin-left: 10px;
+}
+.signout:hover {
+  background: #f53030;
+  cursor: pointer;
+}
+@media (max-width: 821px) {
+  .container-setting {
+    margin-left: 30px;
+    min-width: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container-setting {
+    min-width: 95% !important;
+    margin: auto;
+  }
+}
+.photo img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+@media (max-height: 730px) /* and (max-width: 550px) */ {
+  .container-setting {
+    /* margin-top: 1rem; */
+    overflow: auto;
+    /* display: block; */
+    max-height: 100%;
+    position: inherit;
+    transform: translate(0, 0);
+  }
+  .settings {
+    margin-bottom: 5rem;
+  }
+}

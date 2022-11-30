@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>connect- Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* Design reference: https://dribbble.com/shots/10051583-Daily-UI-007-Settings */
+
+      /* basic */
+      html,
+      body {
+        background-color: #f5f6f8;
+      }
+      body {
+        font: 16px/1.2 "Roboto", sans-serif;
+        color: #1d1d27 !important;
+      }
+
+      .alink {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+      }
+      .alink i {
+        width: 20px;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      /* container */
+      .container-setting {
+        min-width: 600px;
+        height: auto;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      /* settings */
+      .settings {
+        color: #1d1d27 !important;
+        background-color: #fff;
+      }
+      /* head, body */
+      .settings .head,
+      .settings .body {
+        padding: 16px 8px;
+      }
+      .settings .head + .body {
+        border-top: 1px solid #ccc;
+      }
+      /* head */
+      .settings .head {
+        text-align: center;
+        position: relative;
+      }
+      .settings .photo {
+        font-size: 0;
+      }
+      .settings .photo img {
+        border-radius: 50%;
+      }
+      .settings .user_info {
+        margin-top: 8px;
+      }
+      .settings .user_info h2 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .settings .user_info small {
+        font-size: 14px;
+      }
+
+      /* body */
+      .settings .body {
+        max-height: 400px;
+        overflow: auto;
+      }
+      .example::-webkit-scrollbar {
+        display: none;
+      }
+      .setting .setting_item {
+        display: flex;
+        align-items: center;
+      }
+      .setting {
+        padding: 0px;
+      }
+      .setting .setting_item + .setting_item {
+        border: 1px solid #ccc;
+      }
+      .setting_item {
+        background-color: #1d1d27;
+        color: snow;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        padding: 15px 0 !important;
+        display: flex;
+        align-items: initial !important;
+        flex-direction: column;
+      }
+      .setting-item-main {
+        display: flex;
+      }
+      .drop-setting-item {
+        display: none;
+      }
+      .drop-item-list {
+        padding: 0;
+      }
+      .drop-item-list li {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+        padding: 14px;
+      }
+      .drop-item-head {
+        font-weight: bold;
+        font-size: 14px;
+        color: #ccc;
+        margin-bottom: 6px;
+      }
+      .drop-item-desc {
+        font-weight: bold;
+        font-size: 15px;
+        color: snow;
+      }
+
+      .setting .setting-item-main .item_options {
+        flex-grow: 1;
+        padding: 0 8px;
+      }
+      .signout {
+        text-align: center;
+        background: #f05555;
+        transition: 0.2s;
+        font-weight: bold;
+      }
+      .setting-item-main > i {
+        margin-left: 10px;
+      }
+      .signout:hover {
+        background: #f53030;
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .container-setting {
+          min-width: 100% !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 	<div class="blog">Visit <a href="#" target="_blank">My Blog</a></div> -->
+    <div class="container-setting">
+      <div class="settings">
+        <div class="head">
+          <figure class="photo">
+            <img src="https://picsum.photos/g/80/80" />
+          </figure>
+          <div class="user_info">
+            <h2>Keval</h2>
+            <small>@keval_vavaliya</small>
+          </div>
+        </div>
+        <div class="body">
+          <ul class="setting">
+            <li class="setting_item">
+              <div class="setting-item-main">
+                <i class="fas fa-user"></i>
+                <span class="item_options">Personal Details</span>
+                <span class="alink">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </div>
+              <div class="drop-setting-item">
+                <ul class="drop-item-list">
+                  <li>
+                    <span class="drop-item-head">Phone number</span>
+                    <span class="drop-item-desc">+91 8141262294</span>
+                  </li>
+                  <li>
+                    <span class="drop-item-head">Username</span>
+                    <span class="drop-item-desc">kevalvavaliya</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="setting_item">
+              <div class="setting-item-main">
+                <i class="fas fa-mobile-alt"></i>
+                <span class="item_options">Devices</span>
+                <span class="alink">
+                  <i class="fas fa-angle-down"></i>
+                </span>
+              </div>
+              <div class="drop-setting-item">
+                <ul class="drop-item-list">
+                  <li>
+                    <span class="drop-item-head">Chrome browser</span>
+                    <span class="drop-item-desc">Windows</span>
+                  </li>
+                  <li>
+                    <span class="drop-item-head">Safari browser</span>
+                    <span class="drop-item-desc">Apple iphone</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="setting_item">
+              <div class="setting-item-main">
+                <i class="fas fa-id-badge"></i>
+                <span class="item_options">Contact us</span>
+                <span class="alink">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </div>
+            </li>
+            <li class="setting_item">
+              <div class="setting-item-main">
+                <i class="fas fa-shield-alt"></i>
+                <span class="item_options">Terms and conditions</span>
+                <span class="alink">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </div>
+            </li>
+            <li class="setting_item signout">
+              <span class="item_options">Sign out</span>
+              <span class="alink"> </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".setting-item-main").click(function () {
+          $(this).siblings().slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

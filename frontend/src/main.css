@@ -1,0 +1,321 @@
+.edit-profile {
+  width: 60%;
+  display: flex;
+  /* height: 100%; */
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 4rem;
+}
+.links-main {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  list-style: none;
+}
+.link-main {
+  border: 2px solid;
+  margin: 6px;
+  padding: 5px 25px;
+  margin-bottom: 0;
+}
+.add-links {
+  padding-bottom: 10px;
+}
+.add-link {
+  padding: 8px 100px;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: var(--bgColorMenu);
+  color: white;
+  font-size: 18px;
+  border: none;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.add-link:hover,
+.box button:hover {
+  background-color: #40404e;
+}
+.boxes {
+  /* margin-top: 10px; */
+  padding: 1rem;
+  height: 700px;
+  overflow-y: auto;
+}
+.box {
+  position: relative;
+  /* border: 2px solid; */
+  display: none;
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 20px;
+  margin: 2rem 1rem;
+  background-color: #ffffff;
+}
+.box input {
+  display: block;
+  margin: 5px 0 20px 0;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  width: 90%;
+  border-bottom: 1px solid rgb(207, 207, 207);
+  outline: none;
+  padding-left: 5px;
+  font-size: 16px;
+}
+.box p {
+  font-size: 18px;
+}
+.text {
+  display: block;
+  margin: 10px 0;
+  margin-left: 10px;
+}
+.hide {
+  display: none;
+}
+.box button,
+.box2 button,
+.final {
+  padding: 7px 30px;
+  position: relative;
+  background-color: var(--bgColorMenu);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px 10px;
+}
+.final {
+  margin-top: 15px;
+}
+.disable {
+  background-color: #40404e !important;
+}
+/* .edit {
+  position: absolute;
+  right: 4rem;
+  font-size: 18px;
+  bottom: 0.8rem;
+}
+.delete {
+  position: absolute;
+  right: 1rem;
+  font-size: 18px;
+  bottom: 0.8rem;
+} */
+.preview {
+  border: 1px solid rgb(207, 207, 207);
+  width: 700px;
+  /* height: 100vh; */
+}
+.profile-url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(207, 207, 207);
+  /* padding: 18px 10px; */
+  height: 7%;
+}
+.device {
+  height: 100%;
+  width: 100%;
+}
+.mobile {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  height: 93%;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.iphone {
+  width: 350px;
+  height: 680px;
+  /* background-color: #f3f3f3; */
+  background-image: linear-gradient(
+    135deg,
+    #9951cd,
+    #db55ae,
+    #e03432,
+    #d55d40,
+    #cc8425,
+    #b4a320,
+    #6ec469,
+    #2ac49d,
+    #1bb2c7,
+    #3268c6
+  );
+  /* margin: auto; */
+  border: 13px solid;
+  border-radius: 55px;
+  overflow: auto;
+}
+.p-photo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.p-photo img {
+  width: 70px;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.username {
+  margin-top: 10px;
+}
+.show {
+  display: block;
+}
+.msg {
+  margin-bottom: -1rem;
+  margin-left: 0.8rem;
+}
+
+.profile {
+  width: 60%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 20px;
+}
+.user-profile {
+  height: 100%;
+  overflow: auto;
+  padding: 0 10px;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+.about textarea {
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  background: none;
+  transition: 0.3s;
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.about textarea:focus {
+  border: 1px solid rgb(194, 194, 194);
+}
+.user-profile button,
+.custom-file-input::-webkit-file-upload-button {
+  padding: 7px 15px;
+  /* width: 100px; */
+  margin-right: 10px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+  background-color: var(--bgColorMenu);
+  color: white;
+  font-size: 16px;
+  border: none;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.custom-file-input::-webkit-file-upload-button {
+  font-size: 15px;
+  padding: 11px 15px;
+}
+.p-title {
+  margin-bottom: 1rem;
+}
+.avatar p,
+.banner p,
+.about p,
+.change-name p {
+  margin-bottom: 0.3rem;
+  font-size: 18px;
+}
+.avatar,
+.banner,
+.change-name {
+  margin-bottom: 2rem;
+}
+.about {
+  margin-bottom: 1rem;
+}
+.custom-file-input {
+  width: 200px;
+  margin-right: 15px;
+}
+.rmvbtn {
+  position: relative;
+}
+
+/* .custom-file-input::before {
+  width: 100% !important;
+  content: "Change";
+  text-align: center;
+  display: inline-block;
+  padding: 10px 0;
+  outline: none;
+  background-color: var(--bgColorMenu);
+  color: white;
+  font-size: 16px;
+  border: none;
+  transition: 0.3s;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+.apply {
+  width: auto !important;
+  padding: 8px 1.4rem !important;
+}
+.profile-url p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.change-name input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--bgColorMenu);
+  background: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alert,
+.alert-add {
+  text-align: left;
+  color: red;
+  margin-left: 10px;
+  display: none;
+}
+
+.insta,
+.tt,
+.ld,
+.fb {
+  display: none;
+}
+.box button img,
+.rmvbtn img {
+  width: 20px;
+  margin-bottom: -5px;
+}
+
+@media (max-height: 735px) {
+  .iphone {
+    max-height: 95%;
+  }
+  .profile-url {
+    /* height: 50px; */
+    padding: 6px;
+    /* padding: 10px; */
+  }
+}

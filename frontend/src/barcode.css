@@ -1,0 +1,24 @@
+.barcode {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.code {
+  margin: 12px 0;
+  /* border: 1px solid; */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.b-title {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.b-title h1 {
+  margin-bottom: -8px;
+}
+.b-title p {
+  font-size: 17px;
+}
