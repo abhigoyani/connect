@@ -1,4 +1,6 @@
 # Connect - Links to the Future
+<p align="center"> <img  src="https://github.com/abhigoyani/connect/assets/72963356/4af4c75a-6774-432a-b166-736b1e6e5eb4" /> </p>
+
 Connect is a powerful platform that enables users to seamlessly connect their audiences to all of their content with just one click. It serves as an open-source alternative to Linktree, offering a customizable solution implemented using JavaScript and Flask.
 
 With Connect, users can consolidate their various content sources, such as social media profiles, websites, blogs, portfolios, and more, into a single centralized hub. This eliminates the need for sharing multiple links and simplifies the process of engaging with their audience.
